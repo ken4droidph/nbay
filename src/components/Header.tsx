@@ -22,7 +22,7 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-2">
+          <a href="https://ken4droidph.github.io/nbay/" className="flex items-center gap-2">
             <div className="w-10 h-10 bg-nba-red rounded-full flex items-center justify-center">
               <span className="text-white font-black text-xl">N</span>
             </div>
