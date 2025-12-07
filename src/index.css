@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --nba-red: #C8102E;
+  --nba-blue: #1D428A;
+  --nba-gold: #FFD700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/* Hide scrollbar for category filters */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Text line clamp utilities */
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* Animation utilities */
+.delay-1000 {
+  animation-delay: 1000ms;
+}
+
+/* NBA Colors */
+.bg-nba-red {
+  background-color: var(--nba-red);
+}
+
+.bg-nba-blue {
+  background-color: var(--nba-blue);
+}
+
+.bg-nba-gold {
+  background-color: var(--nba-gold);
+}
+
+.text-nba-red {
+  color: var(--nba-red);
+}
+
+.text-nba-blue {
+  color: var(--nba-blue);
+}
+
+.text-nba-gold {
+  color: var(--nba-gold);
+}
+
+.border-nba-gold {
+  border-color: var(--nba-gold);
+}
+
+.fill-nba-red {
+  fill: var(--nba-red);
+}
+
+.fill-nba-gold {
+  fill: var(--nba-gold);
+}
+
+.shadow-red-500\/25 {
+  --tw-shadow-color: rgba(239, 68, 68, 0.25);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-red-500\/40 {
+  --tw-shadow-color: rgba(239, 68, 68, 0.4);
+  --tw-shadow: var(--tw-shadow-colored);
+}
